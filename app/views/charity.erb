@@ -1,0 +1,274 @@
+    <!doctype html>
+<html>
+  <head>
+    <title>CommunityLinks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="#">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+
+    <style>
+
+       /* Navigation */
+      .navigation {
+        position: absolute;
+        width: 100%;
+        height: 100px;
+        padding: 0 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1;
+      }
+       
+      .navigation-right {
+        margin-left: -33px;
+      }
+       
+      .navigation-right a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #333745;
+        font-size: 12px;
+        font-weight: bold;
+        width: 107px;
+        height: 30px;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        display: inline-block;
+        text-align: center;
+        line-height: 25px;
+        transition: all .2s;
+      }
+       
+      .navigation-right a:hover,
+      .navigation-right a:focus {
+        border-color: rgb(234, 46, 73);
+        background-color: rgba(44, 45, 47, 0);
+      }
+       
+      .navigation-left {
+        margin-right: 85px;
+      }
+
+      .css-slider-wrapper {
+        display: block;
+        background: #FFF;
+        overflow: hidden;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      * {
+                  box-sizing: border-box;
+                }
+
+                #myInput {
+                  background-position: 10px 10px;
+                  background-repeat: no-repeat;
+                  width: 40%;
+                  font-size: 16px;
+                  padding: 12px 20px 12px 40px;
+                  border: 1px solid #ddd;
+                  margin-bottom: 12px;
+                  border-radius: 25px;
+                }
+
+                #myTable {
+                  border-collapse: collapse;
+                  width: 100%;
+                  border: 1px solid #ddd;
+                  font-size: 18px;
+                }
+
+                #myTable th, #myTable td {
+                  text-align: left;
+                  padding: 12px;
+                }
+
+                #myTable tr {
+                  border-bottom: 1px solid #ddd;
+                }
+
+                #myTable tr.header, #myTable tr:hover {
+                  background-color: #f1f1f1;
+                }
+
+    </style>  
+
+  </head>
+  <body>
+         <nav class="navbar navbar-default" style="background-color: white; border-color:white">
+            <div class="navigation">
+              <div class="navigation-right">
+                <a href="#">Profile</a>
+                <a href="/calendar">Calendar</a>
+                <a href="#">Messages&nbsp;<span class="badge">3</span></a>
+                <a href="/charity">Charities</a>
+                <a href="#">Directories</a>
+                <a href="/studenthome">Home</a>
+                <div class="btn-group">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"> Groups <span class="caret"></span>
+                        </a>
+                                <ul class="dropdown-menu">
+                                        <li><a href="#">Collegiate</a></li>
+                                    <li><a href="#">Trinity</a></li>
+                                    <li><a href="#">Poly Prep</a></li>
+                                </ul>
+                        </div>
+              </div>
+              <div class="navigation-left">
+                <a class="navbar-brand" href="/" style="color: orange">CommunityLinks</a>
+              </div>
+            </div>
+            <br>
+            <br>
+            <br>
+        </nav>
+        	<br>
+    <center> <nav class="navbar navbar-default" style="background-color: #7E8F7C; border-color:#6A8A82"> <br> <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for charities..." title="Type in a charity"></center>
+
+
+        <table id="myTable">
+          <tr class="header">
+            <th style="width:20%;">Charity Name</th>
+            <th style="width:20%;">Address</th>
+            <th style="width:20%;">Phone #</th>
+            <th style="width:20%;">Focus</th>
+            <th style="width:20%;">Events</th>
+            <th style="width:20%;">Directions</th>
+          </tr>
+          <tr>
+            <td>NYC Department of Parks</td>
+            <td>24 W 61st St, New York, NY 10023</td>
+            <td>(212) 830-7700</td>
+            <td>Nature Conservation</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/24+W+61st+St,+New+York,+NY+10023/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>DOROT</td>
+            <td>171 W 85th St, New York, NY 10024</td>
+            <td>(212) 769-2850</td>
+            <td>Elderly Care</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/171+W+85th+St,+New+York,+NY+10024/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Carter Burden Center for the Aging</td>
+            <td>1484 1st Avenue, New York, NY 10075</td>
+            <td>(212) 879-7400</td>
+            <td>Elderly care</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/1484+1st+Avenue,+New+York,+NY+10075/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Harlem Children's Zone</td>
+            <td>103 W 108th St, New York, NY 10025</td>
+            <td>(212) 866-5579</td>
+            <td>Child Welfare</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/103+W+108th+St,+New+York,+NY+10025/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>NY Common Pantry</td>
+            <td>8 E 109th St, New York, NY 10029</td>
+            <td>(917) 720-9700</td>
+            <td>Food</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/8+E+109th+St,+New+York,+NY+10029/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Stanley Isaacs Neighborhood Center</td>
+            <td>415 E 93rd St, New York, NY 10128</td>
+            <td>(212) 360-7620</td>
+            <td>Child Welfare</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/415+E93rd+St,+New+York,+NY+10128/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>New York Classical Players</td>
+            <td>101 Lafayette Ave, Brooklyn, NY 11217</td>
+            <td>(917) 971-0056</td>
+            <td>Arts</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/101+Lafayette+Ave,+Brooklyn,+NY+11217/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Madison Avenue Presbyterian Church</td>
+            <td>921 Madison Ave, New York, NY 10021</td>
+            <td>(212) 288-8920</td>
+            <td>Elderly Care</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/921+Madison+Ave,+New+York,+NY+10021/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>America SCORES New York </td>
+            <td>520 8th Ave #1100B, New York, NY 10018</td>
+            <td>(212) 868-9510</td>
+            <td>Athletics</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/520+8th+Ave+#1100B,+New York,+NY+10018/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>The Wild Bird Fund</td>
+            <td>565 Columbus Ave, New York, NY 10024</td>
+            <td>(646) 306-2862</td>
+            <td>Nature Conservation</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/565+Columbus+Ave,+New+York,+NY+10024/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>The American Folk Art Museum</td>
+            <td>2 Lincoln Square, New York, NY 10023</td>
+            <td>(212) 595-9533</td>
+            <td>The Arts</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/2+Lincoln+Square,+New+York,+NY+10023/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Jewish Community Center</td>
+            <td>334 Amsterdam Ave, New York, NY 10023</td>
+            <td>(646) 505-4444</td>
+            <td>Education</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/334+Amsterdam+Ave,+New+York,+NY+10023/" target="_blank">Get Directions</a></td>
+          </tr>
+          <tr>
+            <td>Lincoln Square Neighborhood Center</td>
+            <td>250 W 65th St, New York, NY 10023</td>
+            <td>(212) 874-0860</td>
+            <td>Elderly Care</td>
+            <td><a href="#">Event List</a></td>
+            <td><a href="https://www.google.com/maps/dir/Current+Location/250+W+65th+St, New+York,+NY+10023/" target="_blank">Get Directions</a></td>
+          </tr>
+        </table>
+
+        <script>
+        function myFunction() {
+          var input, filter, table, tr, td, i;
+          input = document.getElementById("myInput");
+          filter = input.value.toUpperCase();
+          table = document.getElementById("myTable");
+          tr = table.getElementsByTagName("tr");
+          for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+              if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = "";
+              } else {
+                tr[i].style.display = "none";
+              }
+            }       
+          }
+        }
+        </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

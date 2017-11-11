@@ -1,0 +1,223 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CommunityLinks</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="#">
+    <style>
+
+    * {
+      box-sizing: border-box;
+    }
+     
+    body {
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Navigation */
+    .navigation {
+      position: absolute;
+      width: 100%;
+      height: 100px;
+      padding: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 1;
+    }
+     
+    .navigation-left {
+      margin-left: -33px;
+    }
+     
+    .navigation-left a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #333745;
+      font-size: 12px;
+      font-weight: bold;
+      width: 107px;
+      height: 30px;
+      border: 2px solid transparent;
+      border-radius: 15px;
+      display: inline-block;
+      text-align: center;
+      line-height: 25px;
+      transition: all .2s;
+    }
+     
+    .navigation-left a:hover,
+    .navigation-left a:focus {
+      border-color: rgb(234, 46, 73);
+      background-color: rgba(44, 45, 47, 0);
+    }
+     
+    .navigation-center {
+      margin-right: 85px;
+    }
+     
+    .navigation-right {
+      display: flex;
+      align-items: center;
+    }
+     
+    .login-btn {
+      background-color: #b8b8b9;
+      width: 97px;
+      height: 30px;
+      display: inline-block;
+      text-align: center;
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: bold;
+      border-radius: 15px;
+      border: none;
+      color: #333745;
+      text-transform: uppercase;
+      margin-left: 20px;
+      transition: all .2s;
+      cursor: pointer;
+    }
+    .login-btn:hover {
+      transform: scale(1.26);
+    }
+
+    .css-slider-wrapper {
+      display: block;
+      background: #FFF;
+      overflow: hidden;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    .carousel { z-index: -99; } /* keeps this behind all content */
+.carousel .item {
+    position: fixed; 
+    width: 100%; height: 100%;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -ms-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+
+}
+.carousel .one {
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .two {
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .three {
+    background-size: cover;
+    -moz-background-size: cover;
+}
+.carousel .active.left {
+    left:0;
+    opacity:0;
+    z-index:2;
+}
+h2  {
+  position: absolute;
+   top: 250px;
+   left: 100px;
+   width: 100%;
+   margin:  auto;
+   width: 400px;
+   height: 50px;
+}
+h4 {
+position: absolute;
+   top: 200px;
+   left: 100px;
+   width: 100%;
+   margin:  auto;
+   width: 400px;
+   height: 40px;
+}
+    </style>
+  
+
+  </head>
+  <body>
+    
+
+         <!-- Navigation -->
+    <div class="navigation">
+      <div class="navigation-left">
+        <a href="/contactus">Contact Us</a>
+        <a href="/donate">Donate</a>
+        <a href="/aboutus">About Us</a>
+        <a href="/people">People</a>
+        <a href="/">Home</a>
+      </div>
+      <div class="navigation-center">
+        <a class="navbar-brand" href="/" style="color: orange">CommunityLinks</a>
+      </div>
+      <div class="navigation-right">
+        <button class="login-btn" role="button"><a href="/signin" style="color: black"> Login</a></button>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+ <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 2000%;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="text">
+                    <h4>Homeless Service: </h4>
+                    <h2>CommunityLinks: Student Service Simplified </h2>
+                  </div>
+                    <img src="https://paulmason.name/media/demos/full-screen-background-image/background.jpg" height=100% width=100% />
+                </div>
+
+                <div class="item">
+                    <h4>School Service</h4>
+                    <h2>CommunityLinks: Student Service Simplified</h2>
+                    <img src="http://cdn.wallpapersafari.com/86/65/T7nxEk.jpg" height=100% width=100% />
+                </div>
+
+                <div class="item">
+                    <h4>Park Service</h4>
+                    <h2>CommunityLinks: Student Service Simplified</h2>
+                    <img src="https://lh3.googleusercontent.com/j_CCthn6nfic6yXvS5pYuIv-S_uxSERH4N0RI5AcjfZgIS_Z25a9GaEl8to3LGahkw=h900" height=100% width=100% />
+                </div>
+
+                <div class="item">
+                    <h4>Kitchen Service</h4>
+                    <h2>CommunityLinks: Student Service Simplified</h2>
+                    <img src="http://enviragallery.com/wp-content/uploads/2015/10/photodune-2789649-green-m3.jpg" height=100% width=100% />
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+  </body>
+</html>
